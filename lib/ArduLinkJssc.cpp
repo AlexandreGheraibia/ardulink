@@ -63,7 +63,7 @@ void ArduLinkJssc::parseMessage(){
         String customId = _inputString.substring(11,separatorPosition);
         String value = _inputString.substring(separatorPosition + 1, messageIdPosition);
         if(customId.length()!=0) {
-			    this->custDeal(customId,value);
+	  this->custDeal(customId,value);
         } else {
           msgRecognized = false;
           // this sketch doesn't know other messages in this case command is ko (not ok)
