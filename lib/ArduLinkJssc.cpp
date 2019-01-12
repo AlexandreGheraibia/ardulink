@@ -15,7 +15,7 @@
  *
  */
 
-#include "./lib/ArduLinkJssc.h"
+#include "ArduLinkJssc.h"
 
  
 
