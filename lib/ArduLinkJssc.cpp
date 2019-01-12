@@ -74,7 +74,7 @@ void ArduLinkJssc::parseMessage(){
       }
 	  idPosition=_inputString.indexOf("?id=");
 	  answerWait=idPosition!=-1;
-    flushMsg();
+      flushMsg();
 	}
  
 }
