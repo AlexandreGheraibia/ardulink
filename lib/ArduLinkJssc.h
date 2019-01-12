@@ -14,7 +14,7 @@ class ArduLinkJssc
 	void setCustomDeal(void (*fct)(String commande,String value));
   
 	private:
-  void flushMsg();
+	void flushMsg();
 	void (*custDeal)(String commande,String value);
 	int idPosition;
 	bool msgRecognized;
