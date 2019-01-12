@@ -8,7 +8,8 @@ class ArduLinkJssc
 	void eventSerialListener();
 	void parseMessage();
 	void setCustomDeal(void (*fct)(String commande,String value));
- 	bool getMsgState() const;
+ 	void customSend(String message) const;
+	bool getMsgState() const;
 	
   private:
   	bool haveToResponds() const;
