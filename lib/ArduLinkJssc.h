@@ -7,7 +7,7 @@ class ArduLinkJssc
 	ArduLinkJssc(HardwareSerial*);
 	void eventSerialListener();
 	void parseMessage();
-  bool getMsgState() const;
+	bool getMsgState() const;
 	bool haveToResponds() const;
 	void response();
 	int  getType() const;
@@ -20,6 +20,6 @@ class ArduLinkJssc
 	bool msgRecognized;
 	bool answerWait;
 	String _inputString;         
-  boolean _stringComplete;
-  HardwareSerial *_serial;
+  	boolean _stringComplete;
+	HardwareSerial *_serial;
 };
