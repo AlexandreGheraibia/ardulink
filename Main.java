@@ -16,8 +16,9 @@ static private CustomListener eventCustListener() {
 
 public static void main(String[] args) throws InterruptedException {
     Link link=Links.getDefault();
-    link.addCustomListener(eventCustListener());
+   
     if(link!=null) {
+    link.addCustomListener(eventCustListener());
     //send message to the Arduino Card    
     link.sendCustomMessage("cmd/value");
     }
