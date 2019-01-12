@@ -87,7 +87,6 @@ void ArduLinkJssc::parseMessage(){
 }
 
 void ArduLinkJssc::flushMsg(){
-	 // clear the string:
  if(haveToResponds()){
     response();
   }
