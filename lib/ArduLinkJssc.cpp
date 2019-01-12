@@ -21,9 +21,9 @@
 
 ArduLinkJssc::ArduLinkJssc(HardwareSerial *serial):_serial(serial),idPosition(-1),msgRecognized(false),answerWait(false),_inputString(""),_stringComplete(false) {
   _serial->begin(115200);
-	_serial->print("alp://rply/");//F pour passer les variable en ram et non en sd ram  
-	_serial->print("ok?id=0");
-	_serial->print("\n"); // End of Message
+  _serial->print("alp://rply/");//F pour passer les variable en ram et non en sd ram  
+  _serial->print("ok?id=0");
+  _serial->print("\n"); // End of Message
 }
 
 bool ArduLinkJssc::getMsgState() const{
