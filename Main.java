@@ -18,7 +18,7 @@ public static void main(String[] args) throws InterruptedException {
     Link link=Links.getDefault();
     if(link!=null) {
     //send message to thz Arduino Card    
-    link.sendCustomMessage("b/value");
+    link.sendCustomMessage("cmd/value");
     }
   }
 }
