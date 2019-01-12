@@ -52,6 +52,13 @@ void ArduLinkJssc::setCustomDeal(void (*fct)(String commande,String value)){
 	this->custDeal=fct;
 }
 
+void ArduLinkJssc::customSend(String message) const{
+    _serial->print("alp://cevnt/");
+    _serial->print(message);
+    _serial->print('\n');
+    _serial->flush();
+}
+
 void ArduLinkJssc::parseMessage(){
     if(_inputString.startsWith(F("alp://"))) {
 		// OK is a message I know (this is general code you can reuse)
