@@ -17,7 +17,7 @@ static private CustomListener eventCustListener() {
 public static void main(String[] args) throws InterruptedException {
     Link link=Links.getDefault();
     if(link!=null) {
-    //send message to thz Arduino Card    
+    //send message to the Arduino Card    
     link.sendCustomMessage("cmd/value");
     }
   }
