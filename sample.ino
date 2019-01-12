@@ -1,4 +1,5 @@
-#include "./lib/ArduLinkJssc.h"
+#include "ArduLinkJssc.h"
+
 ArduLinkJssc* ardJssc;
 
 
