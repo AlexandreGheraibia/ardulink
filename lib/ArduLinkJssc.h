@@ -7,19 +7,18 @@ class ArduLinkJssc
 	ArduLinkJssc(HardwareSerial*);
 	void eventSerialListener();
 	void parseMessage();
-	bool getMsgState() const;
-	bool haveToResponds() const;
-	void response();
-	int  getType() const;
 	void setCustomDeal(void (*fct)(String commande,String value));
-  
+  bool getMsgState() const;
 	private:
-	void flushMsg();
+ 
+  bool haveToResponds() const;
+  void flushMsg();
+  void response();
 	void (*custDeal)(String commande,String value);
 	int idPosition;
 	bool msgRecognized;
 	bool answerWait;
 	String _inputString;         
-  	boolean _stringComplete;
-	HardwareSerial *_serial;
+  boolean _stringComplete;
+  HardwareSerial *_serial;
 };
