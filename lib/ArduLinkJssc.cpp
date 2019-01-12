@@ -53,7 +53,7 @@ void ArduLinkJssc::setCustomDeal(void (*fct)(String commande,String value)){
 }
 
 void ArduLinkJssc::parseMessage(){
-	if(_inputString.startsWith(F("alp://"))) {
+    if(_inputString.startsWith(F("alp://"))) {
 		// OK is a message I know (this is general code you can reuse)
        msgRecognized = true;
       if(_inputString.substring(6,10) == F("cust")) { // Custom Message
@@ -81,7 +81,7 @@ void ArduLinkJssc::parseMessage(){
 
 void ArduLinkJssc::flushMsg(){
 	 // clear the string:
-	if(haveToResponds()){
+ if(haveToResponds()){
     response();
   }
   _inputString = "";
@@ -99,7 +99,7 @@ void ArduLinkJssc::response(){
         } else {
           _serial->print(F("ko?id="));
         }
-		    _serial->print(id);
+	_serial->print(id);
         _serial->write(255); // End of Message
         _serial->flush();
       }
