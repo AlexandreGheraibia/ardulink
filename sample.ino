@@ -27,5 +27,5 @@ void loop() {
  if (ardJssc->getMsgState()) {
     ardJssc->parseMessage();//parseMessage function call the callback assigned in setup
  }
- customSend("custom message to the java app")
+ ardJssc->customSend("custom message to the java app")
 }
