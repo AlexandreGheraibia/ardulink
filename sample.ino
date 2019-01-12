@@ -25,7 +25,7 @@ void serialEvent() {
 
 void loop() {
  if (ardJssc->getMsgState()) {
-    ardJssc->parseMessage();//parseMessage function call the callback define in setup
+    ardJssc->parseMessage();//parseMessage function call the callback assigned in setup
  }
  customSend("custom message to the java app")
 }
