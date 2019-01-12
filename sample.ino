@@ -11,7 +11,7 @@ void setup() {
 //call back
 //receive command from java app
 void customDeal(String command,String value){
-	if(command.indexOf("cmd")>0){//command identified by b
+	if(command.indexOf("cmd")>0){//command identified by cmd
 				//do something with the value
         
 	}    
