@@ -23,6 +23,6 @@ class ArduLinkJssc
 	bool msgRecognized;
 	bool answerWait;
 	String _inputString;         
-  boolean _stringComplete;
-  HardwareSerial *_serial;
+ 	boolean _stringComplete;
+  	HardwareSerial *_serial;
 };
