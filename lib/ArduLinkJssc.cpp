@@ -20,7 +20,7 @@
  
 
 ArduLinkJssc::ArduLinkJssc(HardwareSerial *serial):_serial(serial),idPosition(-1),msgRecognized(false),answerWait(false),_inputString(""),_stringComplete(false) {
-  	_serial->begin(115200);
+  _serial->begin(115200);
 	_serial->print("alp://rply/");//F pour passer les variable en ram et non en sd ram  
 	_serial->print("ok?id=0");
 	_serial->print("\n"); // End of Message
@@ -51,20 +51,18 @@ bool ArduLinkJssc::haveToResponds() const{
 void ArduLinkJssc::setCustomDeal(void (*fct)(String commande,String value)){
 	this->custDeal=fct;
 }
-
 void ArduLinkJssc::customDeal(String commande,String value){
-   if(this->custDeal!=NULL){      
+   if(this->custDeal!=NULL){
+      
        this->custDeal(commande,value);
    }  
 }
-
 void ArduLinkJssc::customSend(String message){
     _serial->print("alp://cevnt/");
     _serial->print(message);
     _serial->print('\n');
     _serial->flush();
 }
-
 void ArduLinkJssc::parseMessage(){
 	if(_inputString.startsWith(F("alp://"))) {
 		// OK is a message I know (this is general code you can reuse)
@@ -90,13 +88,14 @@ void ArduLinkJssc::parseMessage(){
       }
 	  idPosition=_inputString.indexOf("?id=");
 	  answerWait=idPosition!=-1;
-      flushMsg();
+    flushMsg();
 	}
  
 }
 
 void ArduLinkJssc::flushMsg(){
-  if(haveToResponds()){
+	 // clear the string:
+	if(haveToResponds()){
     response();
   }
   _inputString = "";
@@ -114,7 +113,7 @@ void ArduLinkJssc::response(){
         } else {
           _serial->print(F("ko?id="));
         }
-        _serial->print(id);
+		    _serial->print(id);
         _serial->write(255); // End of Message
         _serial->flush();
       }
