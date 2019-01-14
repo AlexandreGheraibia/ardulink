@@ -53,6 +53,7 @@ void ArduLinkJssc::setCustomDeal(void (*fct)(String commande,String value)){
 }
 void ArduLinkJssc::customDeal(String commande,String value){
    if(this->custDeal!=NULL){
+      
        this->custDeal(commande,value);
    }  
 }
@@ -73,7 +74,10 @@ void ArduLinkJssc::parseMessage(){
         String customId = _inputString.substring(11,separatorPosition);
         String value = _inputString.substring(separatorPosition + 1, messageIdPosition);
         if(customId.length()!=0) {
-          customDeal(customId,value);
+          if(value.length()!=0){
+            value.setCharAt(value.length()-1,'\0');
+            customDeal(customId,value);
+          }
         } else {
           msgRecognized = false;
           // this sketch doesn't know other messages in this case command is ko (not ok)
