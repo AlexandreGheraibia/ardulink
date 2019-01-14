@@ -24,5 +24,5 @@ class ArduLinkJssc
 	bool answerWait;
 	String _inputString;         
   	boolean _stringComplete;
- 	 HardwareSerial *_serial;
+ 	HardwareSerial *_serial;
 };
