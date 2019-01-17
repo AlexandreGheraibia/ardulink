@@ -53,7 +53,6 @@ void ArduLinkJssc::setCustomDeal(void (*fct)(String commande,String value)){
 }
 void ArduLinkJssc::customDeal(String commande,String value){
    if(this->custDeal!=NULL){
-      
        this->custDeal(commande,value);
    }  
 }
