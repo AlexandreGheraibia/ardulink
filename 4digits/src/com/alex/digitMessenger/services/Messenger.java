@@ -5,14 +5,14 @@ import org.ardulink.core.Link;
 import org.ardulink.core.convenience.Links;
 import org.ardulink.core.events.CustomListener;
 
-//r�f�rence
+//référence
 //http://thecodersbreakfast.net/index.php?post/2008/02/25/26-de-la-bonne-implementation-du-singleton-en-java
 import java.io.IOException;
 //creer un singleton
 public class Messenger {//singleton
     
     private Link link=null;
-    private boolean actifListener=false;
+    private  CustomListener cl=null;
     private Messenger() {
     	 if(this.link==null) {
     		this.link = Links.getDefault();
@@ -20,13 +20,13 @@ public class Messenger {//singleton
     }
     /*
 	technique de classe holder
-	la classe interne ne sera charger en mémoire qu'au premier appel de
+	la classe interne ne sera charger en mÃ©moire qu'au premier appel de
 	cette classe. par getInstance() et remplira les champs static
 	 
     */
     private static class SingletonHolder
     {       
-        /** Instance unique non préinitialisée */
+        /** Instance unique non prÃ©initialisÃ©e */
     	
         private final static Messenger ourInstance = new Messenger();
     	
@@ -45,8 +45,9 @@ public class Messenger {//singleton
     }
   
     public void addCustomListener(final CustomListener cl) throws IOException{
-    	if(!actifListener) {
+    	if(this.cl!=null) {
     		link.addCustomListener(cl);
+		this.cl=cl;
     	}
     }
    
