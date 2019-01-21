@@ -1,0 +1,22 @@
+.container{
+  border: 1px solid white;
+  background-color: #004080;
+
+}
+
+form{
+  border: 1px solid white;
+  background-color: #88a0f7;
+ 
+}
+#eventId{
+	color:white;
+}
+header{
+	color:white;
+}
+
+.table{
+	color:black;
+	background-color: white;
+}
