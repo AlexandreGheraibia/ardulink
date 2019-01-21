@@ -13,7 +13,7 @@ function sendGet(param,type){
 
         		xmlhttp.onreadystatechange = function () {
         		  if (xmlhttp.readyState == 4 ){
-                     div.html("envoyé");
+               		      div.html("envoyé");
         		  }
 
         		};
