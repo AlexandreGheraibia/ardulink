@@ -58,7 +58,7 @@ La partie front se décompose en deux: Une partie d'envoi de messages sous la fo
 une application web qui permet d'envoyer des messages sur mon afficheur digital, depuis n'importe quel endroit dans le monde.
 L'application étant responsive. Elle est utilisable par les téléphones, les tablettes et bien évidemment par les ordinateurs.
 
-# problème:
+#Le problème:
 Le SSE n'a pas l'air de fonctionner sur les mobiles.
 
 
