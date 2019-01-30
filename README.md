@@ -61,6 +61,7 @@ L'application étant responsive. Elle est utilisable par les téléphones, les t
 ## Le problème:
 Le SSE n'a pas l'air de fonctionner sur les mobiles.
 
+#todo revoir la mise en forme.
 
 
 
