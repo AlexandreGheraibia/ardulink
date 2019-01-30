@@ -1,6 +1,6 @@
 # projet pandaReader:
 
-Afin de revoir 2, 3 choses de ma dernière formation. Mais aussi pour exploiter ma carte Arduino Uno.
+Afin de revoir 2, 3 choses de ma dernière formation. Mais aussi exploiter ma carte Arduino Uno.
 
 ## Les composants physiques:
 un afficheur digital 4 digit 7 segments
