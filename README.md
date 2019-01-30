@@ -40,7 +40,7 @@ Pour que le projet soit un peu plus intéressant à programmer, j'ai me suis imp
 Ce qui donne l'impression que le panda lit les messages sur l'afficheur digital.
 J'ai aussi ajouté une classe pour suivre l'état de la carte (comme l'angle de rotation du moteur, la vitesse d'affichage, etc..). Afin d'afficher ses informations dans la page web de l'utilisateur final.
 
-## Entre l'Arduino et la machine hergeant tomcat:
+## Entre l'Arduino et la machine hébergeant tomcat:
 On utilise la librairie arduilink pour faire communiquer l'arduino et l'application SSE (server sent event) à travers le port série avec le protocol Alp. Ce qui implique une implementation d'écoute d'évenement sur la carte et dans l'application java.
 
 ## L'application Java:
