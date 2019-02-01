@@ -55,7 +55,7 @@ L'application Java se comporte comme un service rest. La principale différence 
 
 ### La partie front:
 La partie front se décompose en deux:
-Une partie d'envoi de messages, sous la forme d'un formulaire, une partie réception permettant l'affichage  des états de la carte. Les informations de la carte sont transmises en temps réel grâce aux fonctionnalités SSE de Jersey.
+Une partie d'envois de messages, sous la forme d'un formulaire, une partie réception permettant l'affichage des états de la carte. Les informations de la carte sont transmises en temps réel grâce aux fonctionnalités SSE de Jersey.
 
 ## Le résultat:
 le projet est une application web qui permet d'envoyer des messages sur un afficheur digital, depuis n'importe quel endroit dans le monde. l'application est responsive (ce qui est dù à l'utilisation de Bootsrap). Elle est utilisable par tous appareils possédant un navigateur internet.
