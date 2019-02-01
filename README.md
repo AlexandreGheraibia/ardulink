@@ -48,7 +48,7 @@ J'ai aussi ajouté une classe pour suivre l'état de la carte (comme l'angle de 
 
 ### Entre l'Arduino et la machine hébergeant Tomcat:
 La librairie Arduilink est utilisé pour la communication entre l'arduino et l'application SSE (server-sent Events).
-Ces deux deux derniers communiquent à travers le port série (câble usb) grâce au protocole Alp. Ce qui implique la mise en oeuvre un traitement des événemenst (ou écoutes d'événements) pour la carte et dans pour l'application Java.
+Ces deux deux derniers communiquent à travers le port série (câble usb) grâce au protocole Alp. Ce qui implique un traitement des événements (ou écoutes d'événements) pour l'application Java. Et pour la carte Arduino.
 
 ### L'application Java:
 L'application Java se comporte comme un service rest. La principale différence entre l'implémentation et un service rest est l'utilisation de SSE. Lors d'une requête http du client vers le service SSE du serveur, le client s'abonne aux événements émis par le serveur. La communication entre le serveur et le client reste ouverte. Ce qui permets au serveur d'envoyer des messages au client.Le modèle serveur-client habituel est inversé. La communication est interrompu à l'initiative du client.
