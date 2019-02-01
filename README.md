@@ -30,7 +30,7 @@ Les librairies externe:
 Le serveur:
       tomcat
       
-Le fonctionnement:
+### Le fonctionnement:
 
 ## Pour la carte Arduino:
 Elle affiche grâce à la librairie SegSev des message sur l'afficheur digital. Et en même temps elle gère le déplacement du servo moteur.
