@@ -32,7 +32,7 @@ Le serveur:
       
 ## Le fonctionnement:
 
-### Pour la carte Arduino:
+### La carte Arduino:
 Elle affiche grâce à la librairie SegSev des messages sur l'afficheur digital.En même temps elle gère le déplacement du servo moteur.
 Les 2 pales du servo moteur sont reliés à la tête de la figurine par des fils. Ainsi quand le servo moteur tourne, la tête tourne aussi.
 
