@@ -8,12 +8,12 @@ J'ai créé un petit projet que je décris dans la suite de ce document.
 
 ### La partie hardware:
 
-Un afficheur digital 4 digits 7 segments
-Un servo-moteur sg90
-Une petite figurine de panda.
-Une carte Arduino Uno
-Une machine qui fait office de serveur back-end
-Un serveur qui héberge la partie front-end
+Un afficheur digital 4 digits 7 segments,
+Un servo-moteur sg90,
+Une petite figurine de panda,
+Une carte Arduino Uno,
+Une machine (faisant office de serveur back-end),
+Un serveur hébergeant (la partie front-end)
 
 ### La partie software:
 
