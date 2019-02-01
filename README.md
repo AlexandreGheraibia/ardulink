@@ -3,7 +3,11 @@
 Afin de réviser 2, 3 choses de ma dernière formation. Et d'exploiter ma carte Arduino Uno laissée à l'abandon.
 J'ai créé un petit projet que je décris dans la suite de ce document. 
 
-### Les composants physiques:
+
+## Les composants :
+
+### La partie hardware:
+
 Un afficheur digital 4 digits 7 segments
 Un servo-moteur sg90
 Une petite figurine de panda.
@@ -11,7 +15,8 @@ Une carte Arduino Uno
 Une machine qui fait office de serveur back-end
 Un serveur qui héberge la partie front-end
 
-### Les composants logiciels:
+### La partie software:
+
 IDE (Intellij, Eclipse)
 
 Langage:
@@ -52,7 +57,7 @@ L'application Java se comporte comme un service rest. La principale différence 
 La partie front se décompose en deux:
 Une partie d'envoi de messages, sous la forme d'un formulaire, une partie réception permettant l'affichage  des états de la carte. Les informations de la carte sont transmises en temps réel grâce aux fonctionnalités SSE de Jersey.
 
-### Le résultat:
+## Le résultat:
 le projet est une application web qui permet d'envoyer des messages sur un afficheur digital, depuis n'importe quel endroit dans le monde. l'application est responsive (ce qui est dù à l'utilisation de Bootsrap). Elle est utilisable par tous appareils possédant un navigateur internet.
 
 Si on compare la configuration du projet au modèle MVVM. L'application Java est le fournirseur de service (la vue serveur). Elle fait le lien entre la Carte Arduino qui fournit les données (le Modèle serveur) et la partie front (le patron Modèle-vue-présentation).
