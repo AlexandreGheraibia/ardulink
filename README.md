@@ -64,7 +64,7 @@ L'application étant responsive. Elle est utilisable par tous supports capables 
 Le SSE n'a pas l'air de fonctionner sur les mobiles.
 
 
-#todo revoir la mise en forme.
+#todo relier et revoir la mise en forme.
 
 
 
