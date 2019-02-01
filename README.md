@@ -1,6 +1,6 @@
 # projet pandaReader:
 
-Afin de revoir 2, 3 choses de ma dernière formation. Mais aussi exploiter ma carte Arduino Uno.
+Afin de réviser 2, 3 choses de ma dernière formation. Mais aussi exploiter ma carte Arduino Uno.
 J'ai créé un petit projet que je décris dans la suite de ce document. 
 
 ### Les composants physiques:
