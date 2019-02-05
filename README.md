@@ -58,12 +58,16 @@ La partie front se décompose en deux:
 Une partie d'envois de messages, sous la forme d'un formulaire, une partie réception permettant l'affichage des états de la carte. Les informations de la carte sont transmises en temps réel grâce aux fonctionnalités SSE de Jersey.
 
 ## Le résultat:
-le projet est une application web qui permet d'envoyer des messages sur un afficheur digital, depuis n'importe quel endroit dans le monde. l'application est responsive (ce qui est dù à l'utilisation de Bootsrap). Elle est utilisable par tous appareils possédant un navigateur internet.
+le projet est une application web qui permet d'envoyer des messages sur un afficheur digital, depuis n'importe quel endroit dans le monde. l'application est responsive (ce qui est dù à l'utilisation de Bootsrap). Elle est utilisable par tout appareil possédant un navigateur internet.
 
 Si on compare la configuration du projet au modèle MVVM. L'application Java est le fournirseur de service (la vue serveur). Elle fait le lien entre la Carte Arduino qui fournit les données (le Modèle serveur) et la partie front (le patron Modèle-vue-présentation).
 
-### Le problème:
+## Le problème:
 Le SSE n'a pas l'air de fonctionner sur les mobiles.
+
+## adaptation possible:
+En remplaçant le servo moteur par un relais életronique, On peut transformer ce systéme en un dispositif domotique.
+Qui permettrai de piloter des appareils éléctrique (alimenté par du 220V) à distance 
 
 
 
