@@ -1,4 +1,4 @@
-# projet PandaReader:
+# Projet PandaReader:
 
 Afin de réviser 2, 3 choses de ma dernière formation. Et d'exploiter ma carte Arduino Uno laissée à l'abandon.
 J'ai créé un petit projet que je décris dans la suite de ce document. 
