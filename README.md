@@ -67,7 +67,7 @@ Le SSE n'a pas l'air de fonctionner sur les mobiles.
 
 ## adaptation possible:
 En remplaçant le servo moteur par un relais életronique, On peut transformer ce systéme en un dispositif domotique.
-Qui permettrai de piloter des appareils éléctrique (alimenté par du 220V) via le net.
+Il permettrait de piloter des appareils éléctriques (alimentés par du 220V) via le net.
 
 
 
