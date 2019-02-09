@@ -65,7 +65,7 @@ Si on compare la configuration du projet au modèle MVVM. L'application Java est
 ## Le problème:
 Le SSE n'a pas l'air de fonctionner sur les mobiles.
 
-## adaptation possible:
+## Adaptation possible:
 En remplaçant le servo moteur par un relais életronique, On peut transformer ce systéme en un dispositif domotique.
 Il permettrait de piloter des appareils éléctriques (alimentés par du 220V) via le net.
 
