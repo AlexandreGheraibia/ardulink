@@ -44,7 +44,7 @@ Les 2 pales du servo moteur sont reliés à la tête de la figurine par des fils
 Pour que le projet soit un peu plus intéressant à programmer, je me suis imposé la condition de déplace le servo moteur en fonction du rythme de l'afficheur digital.
 
 Ce qui donne l'impression que le panda lit les messages sur l'afficheur digital.
-J'ai aussi ajouté une classe pour suivre l'état de la carte (comme l'angle de rotation du moteur, la vitesse d'affichage, etc..) afin d'afficher ses informations dans la page web de l'utilisateur.
+J'ai aussi ajouté une classe pour suivre l'état de la carte (comme l'angle de rotation du moteur, la vitesse d'affichage, etc..) afin d'afficher ses informations dans la page vu par l'utilisateur.
 
 ### Entre l'Arduino et la machine hébergeant Tomcat:
 La librairie Arduilink est utilisé pour la communication entre l'arduino et l'application SSE (server-sent Events).
