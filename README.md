@@ -62,9 +62,6 @@ le projet est une application web qui permet d'envoyer des messages sur un affic
 
 Si on compare la configuration du projet au modèle MVVM. L'application Java est le fournirseur de service (la vue serveur). Elle fait le lien entre la Carte Arduino qui fournit les données (le Modèle serveur) et la partie front (le patron Modèle-vue-présentation).
 
-## Le problème:
-Le SSE n'a pas l'air de fonctionner sur les mobiles.
-
 ## Adaptation possible:
 En remplaçant le servo moteur par un relais életronique, On peut transformer ce systéme en un dispositif domotique.
 Il permettrait de piloter des appareils éléctriques (alimentés par du 220V) via le net.
